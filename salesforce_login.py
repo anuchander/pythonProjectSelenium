@@ -18,7 +18,7 @@ def test_validLogin(test_setup):
 
     driver.get('https:login.salesforce.com')
     enter_username("test@tek.com")
-    enter_password("salesforce1")
+    enter_password("xxx")
     driver.find_element_by_id("Login").click()
     Expected_title='Home Page ~ Salesforce - Developer Edition'
     Actual_title=driver.title
