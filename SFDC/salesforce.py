@@ -7,9 +7,9 @@ import time
 driver=webdriver.Chrome(ChromeDriverManager().install())
 driver.maximize_window()
 driver.get('https:login.salesforce.com')
-driver.find_element(By.ID, "username").send_keys("test@tek.com")
-driver.find_element(By.ID, "password").send_keys("changesales1")
-driver.find_element(By.ID, "Login").click()
+driver.find_element(By.CSS_SELECTOR, '#username').send_keys("test@tek.com")
+driver.find_element(By.CSS_SELECTOR, "#password").send_keys("changesales1")
+driver.find_element(By.CSS_SELECTOR, "#Login").click()
 time.sleep(10)
 
 driver.find_element(By.XPATH, "//span[@id='userNavLabel']").click()
