@@ -38,5 +38,5 @@ inputval=driver.execute_script("return document.querySelector('ntp-app').shadowR
 driver.execute_script("arguments[0].setAttribute('value', 'python')", inputval)
 '''
 
-
+print("test shadow root")
 
