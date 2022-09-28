@@ -15,3 +15,7 @@ file1.close()
 file1 = open("/Users/anu/PycharmProjects/pythonProjectSelenium/myfile.txt", 'w')
 file1.write("This is tomorrow\n")
 file1.close()
+
+file1 = open("/Users/anu/PycharmProjects/pythonProjectSelenium/myfile.txt", 'r')
+print(file1.read())
+file1.close()
